@@ -12,7 +12,7 @@ import retrofit2.http.QueryMap;
 
 public interface RetrofitAPIInterface {
 
-    @GET("")
-    Call<RandomUser> getUser(@QueryMap Map<String, String> map);
+    @GET("api")
+    Call<RandomUser> getUser(@QueryMap Map<String, Integer> map);
 
 }

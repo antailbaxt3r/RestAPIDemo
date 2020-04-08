@@ -12,7 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
     private static RetrofitAPIInterface apiInterface;
-    private static final String BASE_URL = "https://randomuser.me/api/";
+    private static final String BASE_URL = "https://randomuser.me/";
 
     public static RetrofitAPIInterface getClient() {
         if (apiInterface == null) {

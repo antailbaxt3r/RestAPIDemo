@@ -49,7 +49,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
         }
 
         public void populate(Result result){
-            String nameString = result.getName().getTitle() + " " + result.getName().getFirst() + " " + result.getName().getLast();
+            String nameString = result.getName().getTitle().toString() + " " + result.getName().getFirst().toString() + " " + result.getName().getLast().toString();
             name.setText(nameString);
             gender.setText(result.getGender());
             email.setText(result.getEmail());
